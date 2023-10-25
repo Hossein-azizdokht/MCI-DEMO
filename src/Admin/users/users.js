@@ -131,7 +131,7 @@ const Users = () => {
   const submitSearch = () => {
     debugger;
     const f = rows.filter((s) =>
-      filters.some((a) =>
+      filters.every((a) =>
         a.if === 10
           ? s[a.name] > a.value
           : a.if === 20
