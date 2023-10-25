@@ -60,23 +60,23 @@ const Users = () => {
     },
     {
       field: "name",
-      headerName: "عنوان خبر",
+      headerName: "نام و نام خانوادگی",
       width: "450",
     },
     {
       field: "username",
-      headerName: "تاریخ انتشار",
+      headerName: "نام پدر",
       flex: "auto",
       width: "150",
     },
     {
       field: "email",
-      headerName: "ویرایش",
+      headerName: "ایمیل",
       width: "150",
     },
     {
       field: "phone",
-      headerName: "حذف",
+      headerName: "شماره تماس",
       width: "150",
     },
   ];
