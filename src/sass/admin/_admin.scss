@@ -1,0 +1,110 @@
+.admin {
+  height: 100vh;
+  &-main {
+    height: calc(100% - 40px);
+    display: flex;
+    &.collapsed {
+      .admin-sidebar {
+        padding: 0;
+        width: 50px;
+        min-width: 50px;
+        overflow: hidden;
+        img[alt="logo"] {
+          width: 40px;
+        }
+        li {
+          padding: 2px;
+          text-align: center;
+          a {
+            text-align: center;
+            line-height: 42px;
+            height: 42px;
+            display: block;
+            overflow: hidden;
+            font-size: 0;
+            width: 42px;
+            svg {
+              margin-left: 0 !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  &-sidebar {
+    width: 240px;
+    min-width: 240px;
+    background-color: #1c2936;
+    margin: 0;
+    padding: 16px;
+    transition: all 0.1s ease-in;
+    height: calc(100vh - 40px);
+    box-sizing: border-box;
+    li {
+      border-bottom: 1px solid #dddddd45;
+      padding: 0.5rem 1rem;
+      a {
+        color: #fff !important;
+      }
+      &:hover {
+        svg,
+        a {
+          color: $base-color;
+        }
+      }
+    }
+  }
+  &-wrapper {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    background-color: #f9f9f9;
+    padding: 0 30px;
+  }
+  &-topbar {
+    height: 40px;
+    background-color: #0f97a5;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 18px;
+    a {
+      color: #fff !important;
+      &:hover {
+        color: $base-color !important;
+      }
+    }
+    svg {
+      font-size: 1.4rem;
+    }
+  }
+  &-logo {
+    margin: 2rem auto;
+    display: block;
+    width: 120px;
+  }
+}
+
+.page-toolbar {
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 4px;
+}
+
+.MuiTypography-root-1,
+span[class^="MuiTypography-root-"] {
+  font-family: "IRANYekan" !important;
+}
+div[class^="MuiCardHeader-avatar"] {
+  margin-right: 0;
+  margin-left: 2px;
+}
+
+.admin-wrapper {
+  & > form {
+    flex-grow: 1 !important;
+  }
+}
+
+
