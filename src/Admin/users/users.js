@@ -60,23 +60,23 @@ const Users = () => {
     },
     {
       field: "name",
-      headerName: "نام و نام خانوادگی",
+      headerName: "نام و نام خانوادگی - name",
       width: "450",
     },
     {
       field: "username",
-      headerName: "نام پدر",
+      headerName: "نام کاربری - username",
       flex: "auto",
       width: "150",
     },
     {
       field: "email",
-      headerName: "ایمیل",
+      headerName: "ایمیل - email",
       width: "150",
     },
     {
       field: "phone",
-      headerName: "شماره تماس",
+      headerName: "شماره تماس - phone",
       width: "150",
     },
   ];
@@ -301,7 +301,7 @@ const Users = () => {
         rowsPerPageOptions={[50]}
         pagination
         page={page}
-        pageSize={9}
+        pageSize={15}
         getRowId={(row) => row.id}
         localeText={faIR.components.MuiDataGrid.defaultProps.localeText}
         paginationMode="server"

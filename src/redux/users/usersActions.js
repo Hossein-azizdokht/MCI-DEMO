@@ -35,10 +35,11 @@ export const fetchUsers = (e) => {
   return function (dispatch) {
     dispatch(fetchUsersRequest());
 
-    let url = `https://jsonplaceholder.typicode.com/users`;
+    let url = `https://run.mocky.io/v3/2d966f4c-3824-4c21-87be-95f50680accb`;
     fetch(url)
       .then((res) => res.json())
       .then((res) => {
+        debugger
         const allUsers = res;
         dispatch(fetchUsersSuccess(allUsers));
       })
